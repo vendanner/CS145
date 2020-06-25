@@ -1,0 +1,40 @@
+2.3.1
+a)
+CREATE TABLE Product (
+  maker CHAR(64),
+  model CHAR(64) PRIMARY KEY,
+  type  CHAR(16)
+); 
+
+b)
+CREATE TABLE PC (
+  model CHAR(64) PRIMARY KEY,
+  speed INT,
+  ram   INT,
+  hd    INT,
+  price DECIMAL(8,2)  
+); 
+
+c)
+CREATE TABLE Laptop (
+  model CHAR(64) PRIMARY KEY,
+  speed INT,
+  ram   INT,
+  hd    INT,
+  screen  INT,
+  price DECIMAL(8,2)  
+);
+
+d)
+CREATE TABLE Printer (
+  model CHAR(64) PRIMARY KEY,
+  color BOOLEAN,
+  type  CHAR(32),
+  price DECIMAL(8,2)
+); 
+
+e)
+ALTER TABLE Printer DROP color;
+
+f)
+ALTER TABLE Laptop ADD od CHAR(16) DEFAULT 'none';
